@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools >= 82.0.1", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-tracker-api"
+version = "0.1.0"
+description = "Job Tracker API"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi==0.135.1",
+    "uvicorn[standard]==0.42.0",
+    "sqlmodel==0.0.37",
+    "alembic==1.18.4",
+    "psycopg2-binary==2.9.11",
+    "python-jose[cryptography]==3.5.0",
+    "passlib[bcrypt]==1.7.4",
+    "bcrypt==3.2.0",
+    "python-multipart==0.0.22",
+    "anthropic==0.86.0",
+    "pydantic-settings==2.13.1",
+]
